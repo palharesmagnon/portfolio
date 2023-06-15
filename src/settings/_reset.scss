@@ -1,0 +1,16 @@
+/*-------------------------------------*\
+  #RESET
+\*-------------------------------------*/
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}

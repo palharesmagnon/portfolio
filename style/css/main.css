@@ -1,0 +1,154 @@
+/*-------------------------------------*\
+  #FONTS
+\*-------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --ff-primary: "Poppins", sans-serif;
+}
+
+/*-------------------------------------*\
+  #COLORS
+\*-------------------------------------*/
+:root {
+  /* Gray Scale */
+  --clr-gray-000: rgb(33, 37, 41);
+  --clr-gray-100: rgb(52, 58, 64);
+  --clr-gray-200: rgb(73, 80, 87);
+  --clr-gray-300: rgb(108, 117, 125);
+  --clr-gray-400: rgb(173, 181, 189);
+  --clr-gray-500: rgb(206, 212, 218);
+  --clr-gray-600: rgb(222, 226, 230);
+  --clr-gray-700: rgb(233, 236, 239);
+  --clr-gray-800: rgb(248, 249, 250);
+  /** UI System **/
+  /* Dark */
+  --clr-d-red: rgb(255, 69, 58);
+  --clr-d-green: rgb(48, 209, 88);
+  --clr-d-blue: rgb(10, 132, 255);
+  --clr-d-orange: rgb(255, 159, 10);
+  --clr-d-purple: rgb(191, 90, 242);
+  /* Light */
+  --clr-l-red: rgb(255, 59, 48);
+  --clr-l-green: rgb(52, 199, 89);
+  --clr-l-blue: rgb(0, 122, 255);
+  --clr-l-orange: rgb(255, 149, 0);
+  --clr-l-purple: rgb(175, 82, 222);
+}
+
+/*-------------------------------------*\
+  #RESET
+\*-------------------------------------*/
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+/*-------------------------------------*\
+  #TYPOGRAPHY
+\*-------------------------------------*/
+html {
+  font-size: 100%;
+} /*16px*/
+body {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small, .text_small {
+  font-size: 0.8rem;
+}
+
+/*-------------------------------------*\
+  #HELPERS
+  ##
+\*-------------------------------------*/
+/*-------------------------------------*\
+  #LINK
+\*-------------------------------------*/
+a {
+  color: var(--clr-d-blue);
+  text-decoration: none;
+}
+@media (prefers-color-scheme: light) {
+  a {
+    color: var(--clr-l-blue);
+  }
+}
+a:active {
+  color: var(--clr-d-red);
+  text-decoration: underline;
+}
+@media (prefers-color-scheme: light) {
+  a:active {
+    color: var(--clr-l-red);
+  }
+}
+a:visited {
+  color: var(--clr-d-purple);
+}
+@media (prefers-color-scheme: light) {
+  a:visited {
+    color: var(--clr-l-purple);
+  }
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--clr-d-red);
+    text-decoration: underline;
+  }
+}
+@media (hover: hover) and (prefers-color-scheme: light) {
+  a:hover {
+    color: var(--clr-l-red);
+  }
+}
+@media (hover: hover) {
+  a:active {
+    text-decoration: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

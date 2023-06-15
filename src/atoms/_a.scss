@@ -1,0 +1,41 @@
+@use "../abstracts";
+
+/*-------------------------------------*\
+  #LINK
+\*-------------------------------------*/
+a {
+  color: var(--clr-d-blue);
+  text-decoration: none;
+
+  @include abstracts.prefers('light') {
+    color: var(--clr-l-blue);
+  }
+
+  &:active {
+    color: var(--clr-d-red);
+    text-decoration: underline;
+    @include abstracts.prefers('light') {
+      color: var(--clr-l-red);
+    }
+  }
+
+  &:visited {
+    color: var(--clr-d-purple);
+    @include abstracts.prefers('light') {
+      color: var(--clr-l-purple);
+    }
+  }
+}
+
+@include abstracts.pointing-device('hover', 'hover') {
+  a:hover {
+    color: var(--clr-d-red);
+    text-decoration: underline;
+    @include abstracts.prefers('light') {
+      color: var(--clr-l-red);
+    }
+  }
+  a:active {
+    text-decoration: none;
+  }
+}
